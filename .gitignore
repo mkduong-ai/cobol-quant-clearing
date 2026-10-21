@@ -1,0 +1,37 @@
+# Compiled GnuCOBOL / C artifacts
+bin/
+*.o
+*.so
+*.dylib
+*.dll
+*.exe
+*.i
+*.c
+*.h
+*.lst
+*.dump
+core
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# macOS / OS metadata
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# IDE / Editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

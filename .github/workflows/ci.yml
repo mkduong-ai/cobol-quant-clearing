@@ -1,0 +1,31 @@
+name: GnuCOBOL Build & Clearing Batch CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  cobol-clearing-engine:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install GnuCOBOL & Python 3
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gnucobol python3
+
+      - name: Generate AI-Scored Fixed-Width Feeds
+        run: python3 python/ai_anomaly_scorer.py
+
+      - name: Compile COBOL Main & Subprogram
+        run: make build
+
+      - name: Execute Clearing & SPAN Margin Engine
+        run: ./bin/CLRENGIN
+
+      - name: Display EOD Clearing Report
+        run: cat output/CLEARING_REPORT.TXT
