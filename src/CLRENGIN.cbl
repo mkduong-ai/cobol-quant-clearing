@@ -49,22 +49,18 @@
        DATA DIVISION.
        FILE SECTION.
 
-       FD  ACCOUNT-MASTER-FILE
-           RECORD CONTAINS 64 CHARACTERS.
+       FD  ACCOUNT-MASTER-FILE.
        01  FD-ACCOUNT-RECORD.
            COPY "ACCTREC.cpy".
 
-       FD  TRADE-INPUT-FILE
-           RECORD CONTAINS 85 CHARACTERS.
+       FD  TRADE-INPUT-FILE.
        01  FD-TRADE-RECORD.
            COPY "TRADEREC.cpy".
 
-       FD  CLEARING-REPORT-FILE
-           RECORD CONTAINS 132 CHARACTERS.
+       FD  CLEARING-REPORT-FILE.
        01  FD-REPORT-LINE              PIC X(132).
 
-       FD  SETTLEMENT-LEDGER-FILE
-           RECORD CONTAINS 120 CHARACTERS.
+       FD  SETTLEMENT-LEDGER-FILE.
        01  FD-SETTLEMENT-RECORD        PIC X(120).
 
        WORKING-STORAGE SECTION.
@@ -167,8 +163,10 @@
            05  FILLER                  PIC X(13) VALUE '       PRICE '.
            05  FILLER                  PIC X(17)
                VALUE '    NOTIONAL ($) '.
-           05  FILLER                  PIC X(15) VALUE 'INIT MARGIN($) '.
-           05  FILLER                  PIC X(14) VALUE ' 1D-VAR-99($) '.
+           05  FILLER                  PIC X(15)
+               VALUE 'INIT MARGIN($) '.
+           05  FILLER                  PIC X(14)
+               VALUE ' 1D-VAR-99($) '.
            05  FILLER                  PIC X(06) VALUE 'AI-SC '.
            05  FILLER                  PIC X(05) VALUE 'STAT '.
            05  FILLER                  PIC X(18)

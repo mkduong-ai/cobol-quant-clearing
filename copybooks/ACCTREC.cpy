@@ -1,6 +1,6 @@
       ******************************************************************
       * COPYBOOK: ACCTREC.CPY
-      * PURPOSE:  PRIME BROKERAGE CLIENT MASTER ACCOUNT RECORD (64 BYTES)
+      * PURPOSE:  PRIME BROKERAGE CLIENT MASTER RECORD (64 BYTES)
       ******************************************************************
            05  AC-ACCOUNT-ID           PIC X(08).
            05  AC-CLIENT-NAME          PIC X(20).
