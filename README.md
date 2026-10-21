@@ -3,6 +3,7 @@
 [![GnuCOBOL Build & Clearing Batch CI](https://img.shields.io/badge/COBOL-Enterprise%20%2F%20GnuCOBOL-0043CE?logo=ibm)](.github/workflows/ci.yml)
 [![Quant Finance](https://img.shields.io/badge/Domain-Prime%20Brokerage%20%26%20SPAN%20Margin-198038)](#quantitative-risk--margin-methodology)
 [![Hybrid AI](https://img.shields.io/badge/Architecture-z16%20Hybrid%20AI%20%2B%20COBOL-8A3FFC)](#system-architecture)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 An enterprise-grade **COBOL + Python Hybrid Quantitative Clearing & Risk Engine** modeled after Tier-1 Prime Brokerage and Central Counterparty (CCP) settlement pipelines (such as DTCC, CME Clearing, and bulge-bracket custody/clearing engines running on IBM z16 mainframes).
 
@@ -103,6 +104,7 @@ cobol-quant-clearing/
 │   └── SETTLED_LEDGER.DAT       # Pipe-delimited downstream general ledger settlement feed
 ├── .github/workflows/ci.yml     # GitHub Actions CI compiling & running via GnuCOBOL
 ├── Dockerfile                   # Reproducible Debian + GnuCOBOL container
+├── LICENSE                      # MIT License
 └── Makefile                     # One-command build & execution automation
 ```
 
@@ -185,3 +187,11 @@ TRADES QUARANTINED BY AI MODEL (HOLD) :           2    TOTAL MARGIN CALL DEFICIT
 TRADES HARD REJECTED (REJT)           :           3    ACCOUNTS ISSUED MARGIN CALLS  :              $1.00                           
 ====================================================================================================================================
 ```
+
+---
+
+## Author & License
+
+- **Author:** Dr. Manh Khoi Duong (with code assist Gemini 4 Argon)
+- **License:** Distributed under the [MIT License](LICENSE).
+

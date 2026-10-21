@@ -1,6 +1,7 @@
       ******************************************************************
       * PROGRAM-ID:  RISKAUDT
-      * AUTHOR:      JIMMY
+      * AUTHOR:      DR. MANH KHOI DUONG
+      *              (WITH CODE ASSIST GEMINI 4 ARGON)
       * PURPOSE:     CALLED SUBPROGRAM FOR QUANTITATIVE RISK, SPAN
       *              INITIAL MARGIN, PARAMETRIC 99% VALUE-AT-RISK (VAR),
       *              AND HYBRID AI/ML ANOMALY CIRCUIT BREAKER SCORING.

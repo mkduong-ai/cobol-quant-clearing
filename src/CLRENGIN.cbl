@@ -1,6 +1,7 @@
       ******************************************************************
       * PROGRAM-ID:  CLRENGIN
-      * AUTHOR:      JIMMY
+      * AUTHOR:      DR. MANH KHOI DUONG
+      *              (WITH CODE ASSIST GEMINI 4 ARGON)
       * PURPOSE:     TIER-1 PRIME BROKERAGE CLEARING, SPAN MARGIN,
       *              NETTING & HYBRID AI ANOMALY SETTLEMENT ENGINE.
       *
